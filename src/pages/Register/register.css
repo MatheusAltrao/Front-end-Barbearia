@@ -1,0 +1,103 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  height: 100vh;
+}
+
+.form-area {
+  background-color: #fafafa;
+  height: 700px;
+  width: 100%;
+  max-width: 1000px;
+
+  border-radius: 1rem;
+
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.form-area .left {
+  height: 100%;
+  width: 500px;
+  background-color: var(--medium-blue);
+  border-radius: 16px 0 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+
+  padding: 3rem;
+
+  color: #fafafa;
+}
+
+.form-area .left .box-left {
+  max-width: 200px;
+}
+
+.form-area .left .title {
+  margin-bottom: 1rem;
+}
+
+.form-area .left .subtitle {
+  margin-bottom: 2rem;
+}
+
+.form-area .right {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.form-area .right .title {
+  color: var(--medium-blue);
+}
+
+.form-area .right form {
+  margin-top: 3rem;
+}
+
+label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin-bottom: 2rem;
+
+  font-weight: 700;
+
+}
+
+label p {
+  color: var(--medium-blue);
+  font-size: 18px;
+}
+
+input {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: #e4e4e4;
+  outline: none;
+  font-size: 16px;
+  padding: 0 1rem;
+}
+
+.button-area {
+  margin-top: 4rem;
+
+}
+
+.button-area button {
+  width: 200px;
+}

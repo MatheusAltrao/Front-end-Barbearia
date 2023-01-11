@@ -1,0 +1,36 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: #e4e4e4;
+
+  padding: 1rem;
+}
+
+.home-area {
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.home-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+
+}
