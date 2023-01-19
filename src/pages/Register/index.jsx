@@ -44,7 +44,12 @@ const Register = () => {
       .then(function (response) {
         console.log(response);
         toast.success('Cliente cadastrado')
-        window.location.reload()
+        setFullName("")
+        setEmail("")
+        setCpf("")
+        setPhone("")
+        setDataNasc("")
+
       })
       .catch(function (error) {
         console.error(error);
@@ -77,34 +82,38 @@ const Register = () => {
 
             <label>
               <p>Nome Completo:</p>
-              <input  onChange={(e) => setFullName(e.target.value)} type="text" name='nomeCompleto' placeholder="Fulano Da Silva" />
+              <input value={fullName}  onChange={(e) => setFullName(e.target.value)} type="text" name='nomeCompleto' placeholder="Fulano Da Silva" />
             </label>
 
             <label>
               <p>E-mail</p>
-              <input onChange={(e) => setEmail(e.target.value)} type="email" name='email'  placeholder="fulano@gmail.com" />
+              <input value={email}  onChange={(e) => setEmail(e.target.value)} type="email" name='email'  placeholder="fulano@gmail.com" />
             </label>
 
             <label>
               <p>CPF:</p>
-              <InputMask name='cpf' onChange={(e) => setCpf(e.target.value)} mask="999.999.999-99"  placeholder="Digite o  CPF"/>
+              <InputMask  value={cpf} name='cpf' onChange={(e) => setCpf(e.target.value)} mask="999.999.999-99"  placeholder="Digite o  CPF"/>
             </label>
 
             <label>
               <p>Celular:</p>
-              <InputMask name='celular'  onChange={(e) => setPhone(e.target.value)} mask="(99)99999-9999"  placeholder="(67)999999999"/>
+              <InputMask  value={phone} name='celular'  onChange={(e) => setPhone(e.target.value)} mask="(99)99999-9999"  placeholder="(67)999999999"/>
             </label>
 
             <label>
               <p> Data De Nascimento:</p>
-              <input onChange={(e) => setDataNasc(e.target.value)} type="date" name='dataNasc'  placeholder="DD/MM/AAAA" />
+              <input  value={dataNasc} onChange={(e) => setDataNasc(e.target.value)} type="date" name='dataNasc'  placeholder="DD/MM/AAAA" />
             </label>
 
             <div className="button-area">
               <button onClick={handleRegister}  type="button" className='button-2'>Cadastrar</button>
+
+              <Link   to='/' >
+                <button className='button-1 none'>Entrar</button>
+            </Link>
             </div>
 
-
+            
 
           </form>
         </div>

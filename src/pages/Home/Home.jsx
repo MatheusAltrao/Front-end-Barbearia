@@ -107,7 +107,7 @@ const Home = () => {
 
         </header>
         <ChakraProvider>
-          <TableContainer  minHeight={200} >
+          <TableContainer overflow={"auto"}  minHeight={200} w={1200} m="0 auto">
             <Table variant='simple'>
               <Thead>
                 <Tr>
