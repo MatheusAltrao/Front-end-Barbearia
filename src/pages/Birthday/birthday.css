@@ -1,0 +1,19 @@
+.birthday{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.birthday-area{
+  background-color: #fff;
+}
+
+.box-title-area {
+  text-align: center;
+  width: 100%;
+  color: var(--light-blue);
+}
